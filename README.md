@@ -10,6 +10,8 @@
 
 <br/>
 
+[![CI](https://github.com/pritmon/migrateai/actions/workflows/ci.yml/badge.svg)](https://github.com/pritmon/migrateai/actions/workflows/ci.yml)
+[![Live Demo](https://img.shields.io/badge/🌐_live-demo-4ade80?style=flat)](https://migrateai.onrender.com)
 [![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![Claude](https://img.shields.io/badge/Claude-Sonnet_4.6-c084fc?style=flat&logo=anthropic)](https://anthropic.com)
@@ -19,7 +21,8 @@
 
 <br/>
 
-[**→ How It Works**](#how-it-works) &nbsp;·&nbsp;
+[**→ Open Live Demo**](https://migrateai.onrender.com) &nbsp;·&nbsp;
+[How It Works](#how-it-works) &nbsp;·&nbsp;
 [Quick Start](#quick-start) &nbsp;·&nbsp;
 [API Reference](#api-reference) &nbsp;·&nbsp;
 [Supported Platforms](#supported-platforms)

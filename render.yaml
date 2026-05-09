@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: migrateai
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
