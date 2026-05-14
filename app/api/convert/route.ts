@@ -39,14 +39,14 @@ Return ONLY the JSON, no markdown fences around it.`;
   try {
     const response = await client.messages.create({
       model: "claude-sonnet-4-6",
-      max_tokens: 4096,
+      max_tokens: 8096,
       messages: [{ role: "user", content: prompt }],
     });
 
     const text = response.content[0].type === "text" ? response.content[0].text : "";
 
-    // Strip markdown fences if model wrapped response
-    const cleaned = text.replace(/^```json\n?/, "").replace(/\n?```$/, "").trim();
+    // Strip any markdown fences (```json, ```python, ``` etc.)
+    const cleaned = text.replace(/^```[a-z]*\n?/, "").replace(/\n?```$/, "").trim();
     const result = JSON.parse(cleaned);
     return NextResponse.json(result);
   } catch (err) {
